@@ -1,1 +1,1 @@
-Cognizant-ava FSE Deep Skilling (Digital Nurture 5.0)
+Cognizant-java FSE Deep Skilling (Digital Nurture 5.0)
