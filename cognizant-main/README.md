@@ -1,20 +1,20 @@
-# Week 1 — Design Patterns and Principles
+
 ## Java FSE Deep Skilling (Digital Nurture 5.0)
 ## Cognizant Digital Nurture 5.0 Program
 
 ---
 
-## Program Details
+| **Field**                   | **Details**                                                                                                                                                                                      |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Program**                 | Cognizant Digital Nurture 5.0 – Deep Skilling                                                                                                                                                    |
+| **Track**                   | Java Full Stack Engineer (Java FSE)                                                                                                                                                              |
+| **Duration**                | 6 Weeks                                                                                                                                                                                          |
+| **Modules Covered**         | Design Patterns, Data Structures & Algorithms, PL/SQL, Spring Framework, Spring Boot, Spring Data JPA, Hibernate, REST APIs, Spring Security, Microservices, ReactJS, Git, JUnit, Mockito, SLF4J |
+| **Programming Language**    | Java                                                                                                                                                                                             |
+| **Tools & Technologies**    | Spring Boot, Maven, Hibernate, ReactJS, Git, Oracle PL/SQL, JUnit, Mockito, SLF4J                                                                                                                |
+| **Development Environment** | Programiz Online Java Compiler, Eclipse IDE, IntelliJ IDEA, VS Code                                                                                                                              |
+| **Repository**              | Weekly Hands-on Exercises and Projects                                                                                                                                                           |
 
-| Field | Details |
-|---|---|
-| Program | Digital Nurture 5.0 — Deep Skilling |
-| Track | Java Full Stack Engineer (Java FSE) |
-| Module | Module 1 — Design Patterns and Principles |
-| Week | Week 1 |
-| Compiler Used | Programiz Online Java Compiler |
-
----
 
 Yes. For your GitHub repository, a professional README should have the same style for **every week**. Here's an example for all folders in your repository.
 
