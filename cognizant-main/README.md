@@ -16,46 +16,33 @@
 
 ---
 
+Yes. For your GitHub repository, a professional README should have the same style for **every week**. Here's an example for all folders in your repository.
+
+---
+
+# Week 1 – Design Patterns and Principles
+
 ## Exercises Completed
 
 ### Exercise 1: Implementing the Singleton Pattern
 
 **Files:**
-- `singleton/DatabaseConnection.java`
-- `singleton/SingletonDemo.java`
+
+* `singleton/DatabaseConnection.java`
+* `singleton/SingletonDemo.java`
 
 **Pattern:** Singleton (Creational Design Pattern)
 
-**What the Singleton Pattern does:**
-- Ensures a class has only ONE instance throughout the entire application
-- Provides a global access point to that single instance
-- Uses double-checked locking for thread safety
-- Private constructor prevents external instantiation
+### What the Singleton Pattern does
 
-**Real World Use Case:**
-Database connections — creating multiple connections wastes resources.
-A single shared connection instance is efficient and consistent.
+* Ensures only one instance of a class exists throughout the application.
+* Provides a global access point to that instance.
+* Prevents unnecessary object creation.
+* Uses thread-safe implementation with double-checked locking.
 
-**Execution Output:**
-```
----- Singleton Pattern Demo ----
-Creating new DatabaseConnection instance: DB-CONN-1
-DB-CONN-1 => Connected to database.
-DB-CONN-1 => Executing query: SELECT * FROM students
-DB-CONN-1 => Executing query: SELECT * FROM courses
+**Real World Use Case**
 
-conn1 id: DB-CONN-1
-conn2 id: DB-CONN-1
-conn1 == conn2 ? true
-SUCCESS: Both references point to the same Singleton instance.
-
-=== Code Execution Successful ===
-```
-
-**Key Proof:**
-- "Creating new DatabaseConnection instance" printed only ONCE
-- Both conn1 and conn2 have the same ID: DB-CONN-1
-- conn1 == conn2 returns TRUE confirming same object in memory
+A database connection manager where the entire application shares a single database connection instead of creating multiple connections.
 
 **Status:** ✅ Executed Successfully
 
@@ -64,99 +51,323 @@ SUCCESS: Both references point to the same Singleton instance.
 ### Exercise 2: Implementing the Factory Method Pattern
 
 **Files:**
-- `factory/Notification.java`
-- `factory/EmailNotification.java`
-- `factory/SMSNotification.java`
-- `factory/PushNotification.java`
-- `factory/NotificationFactory.java`
-- `factory/FactoryDemo.java`
+
+* `factory/Notification.java`
+* `factory/EmailNotification.java`
+* `factory/SMSNotification.java`
+* `factory/PushNotification.java`
+* `factory/NotificationFactory.java`
+* `factory/FactoryDemo.java`
 
 **Pattern:** Factory Method (Creational Design Pattern)
 
-**What the Factory Method Pattern does:**
-- Defines an interface for creating objects
-- Subclasses or factory methods decide which class to instantiate
-- Client code never uses "new" directly on concrete classes
-- Makes it easy to add new types without changing existing code
+### What the Factory Method Pattern does
 
-**Real World Use Case:**
-Notification system — application needs to send Email, SMS, or Push
-notifications. The factory decides which notification object to create
-based on the type passed in, without the client knowing the details.
+* Creates objects without exposing the object creation logic.
+* Returns objects through a common interface.
+* Reduces dependency between classes.
+* Makes applications easier to extend.
 
-**Execution Output:**
-```
----- Factory Method Pattern Demo ----
-[EMAIL] Sending email notification: Your enrollment in Java FSE Deep Skilling is confirmed.
-[SMS] Sending SMS notification: Reminder: SME connect session at 5 PM today.
-[PUSH] Sending push notification: New hands-on exercise has been posted.
+**Real World Use Case**
 
-Class of email object: EmailNotification
-Class of sms object:   SMSNotification
-Class of push object:  PushNotification
-
-Expected error caught: Unknown notification type: FAX
-
-=== Code Execution Successful ===
-```
-
-**Key Proof:**
-- Factory correctly created 3 different notification objects
-- Each object is of its correct concrete class
-- Invalid type "FAX" was handled gracefully with an error message
+A notification service where Email, SMS, or Push notifications are created depending on user requirements.
 
 **Status:** ✅ Executed Successfully
 
 ---
 
-## Repository Structure
+# Week 1 – Data Structures and Algorithms (DSA)
 
-```
-Week1_DesignPatterns/
-│
-├── singleton/
-│   ├── DatabaseConnection.java      # Singleton class with thread-safe getInstance()
-│   └── SingletonDemo.java           # Demo/test class proving single instance
-│
-├── factory/
-│   ├── Notification.java            # Product interface
-│   ├── EmailNotification.java       # Concrete product - Email
-│   ├── SMSNotification.java         # Concrete product - SMS
-│   ├── PushNotification.java        # Concrete product - Push
-│   ├── NotificationFactory.java     # Factory class with createNotification()
-│   └── FactoryDemo.java             # Demo/test class for factory pattern
-│
-└── README.md                        # This file
-```
+## Exercises Completed
 
----
+This week focused on solving fundamental Data Structures and Algorithms problems using Java.
 
-## Concepts Covered
+### Topics Covered
 
-| Concept | Description |
-|---|---|
-| Singleton Pattern | One instance, global access point, private constructor |
-| Factory Method Pattern | Object creation via factory, loose coupling |
-| Creational Patterns | Patterns that deal with object creation mechanisms |
-| Thread Safety | volatile keyword + double-checked locking in Singleton |
-| Interface | Notification interface implemented by concrete classes |
-| Polymorphism | Factory returns Notification type, actual object varies |
+* Arrays
+* Searching Algorithms
+* Sorting Algorithms
+* Time Complexity
+* Space Complexity
+* Basic Problem Solving
+
+### Learning Outcome
+
+* Improved logical thinking and programming skills.
+* Learned how to optimize algorithms.
+* Practiced solving interview-oriented coding problems.
+* Understood different approaches to solve the same problem efficiently.
+
+**Status:** ✅ Executed Successfully
 
 ---
 
-## Learning References
+# Week 1 – PL/SQL
 
-- SOLID Principles: https://www.baeldung.com/solid-principles
-- Design Patterns Overview: https://medium.com/@softwaretechsolution/design-pattern-81ef65829de2
-- GeeksForGeeks DSA: https://www.geeksforgeeks.org/design-and-analysis-of-algorithms/
+## Exercises Completed
+
+This week focused on database programming using Oracle PL/SQL.
+
+### Topics Covered
+
+* Variables
+* Conditional Statements
+* Loops
+* Procedures
+* Functions
+* Cursors
+* Exception Handling
+
+### Learning Outcome
+
+* Developed PL/SQL programs.
+* Created reusable procedures and functions.
+* Learned database-side programming.
+* Improved SQL programming skills.
+
+**Status:** ✅ Executed Successfully
 
 ---
 
-## Tools Used
+# Week 2 – Java Programming
 
-| Tool | Purpose |
-|---|---|
-| Programiz Online Java Compiler | Writing and executing Java code |
-| GitHub | Version control and submission |
-| Java | Programming language |
+## Exercises Completed
+
+This week strengthened my Java programming fundamentals through practical coding exercises.
+
+### Topics Covered
+
+* Object-Oriented Programming
+* Exception Handling
+* Collections Framework
+* File Handling
+* Multithreading
+
+### Learning Outcome
+
+* Improved Java coding skills.
+* Learned object-oriented concepts.
+* Worked with Java Collections Framework.
+* Developed multithreaded applications.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# Week 3 – Spring REST Hands-on
+
+## Exercises Completed
+
+This week focused on developing RESTful web services using Spring Boot.
+
+### Topics Covered
+
+* Spring Boot
+* REST Controllers
+* CRUD Operations
+* Request Mapping
+* ResponseEntity
+* Exception Handling
+
+### Learning Outcome
+
+* Developed REST APIs.
+* Implemented CRUD operations.
+* Tested APIs using HTTP requests.
+* Built backend services following REST principles.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# Week 4.1 – Spring REST Hands-on
+
+## Exercises Completed
+
+This week focused on improving REST API development with layered architecture.
+
+### Topics Covered
+
+* Controller Layer
+* Service Layer
+* Repository Layer
+* DTO
+* Validation
+
+### Learning Outcome
+
+* Developed structured Spring Boot applications.
+* Applied validation techniques.
+* Improved code maintainability.
+* Followed best practices for API development.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# Week 4.2 – Spring REST Hands-on
+
+## Exercises Completed
+
+This week covered advanced REST concepts.
+
+### Topics Covered
+
+* Content Negotiation
+* HATEOAS
+* API Versioning
+* Unit Testing
+* Integration Testing
+
+### Learning Outcome
+
+* Implemented advanced REST features.
+* Built versioned APIs.
+* Improved API usability.
+* Tested REST services effectively.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# Week 5 – Creating Microservices for Account and Loan
+
+## Exercises Completed
+
+This week introduced Microservices Architecture using Spring Boot and Spring Cloud.
+
+### Topics Covered
+
+* Microservices
+* Service Communication
+* API Gateway
+* Spring Cloud
+* Configuration Management
+
+### Learning Outcome
+
+* Developed independent services.
+* Learned service communication.
+* Understood distributed application architecture.
+* Built scalable backend applications.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# Week 6 – ReactJS Hands-on Lab
+
+## Exercises Completed
+
+This week focused on frontend development using ReactJS.
+
+### Topics Covered
+
+* JSX
+* Components
+* Props
+* State
+* Event Handling
+* React Hooks
+
+### Learning Outcome
+
+* Developed reusable React components.
+* Built interactive user interfaces.
+* Managed application state.
+* Improved frontend development skills.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# Week 6 – Git Hands-on Lab
+
+## Exercises Completed
+
+This week focused on learning Git and GitHub for version control.
+
+### Topics Covered
+
+* Git Basics
+* Commits
+* Branching
+* Merging
+* Remote Repository
+* GitHub
+
+### Learning Outcome
+
+* Managed project versions.
+* Collaborated using Git.
+* Uploaded projects to GitHub.
+* Learned version control best practices.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# JUnit Basic Testing Exercises
+
+## Exercises Completed
+
+### Topics Covered
+
+* Unit Testing
+* Assertions
+* Test Suites
+* Test Lifecycle
+
+### Learning Outcome
+
+* Wrote JUnit test cases.
+* Verified application functionality.
+* Improved software quality.
+* Practiced automated testing.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# Mockito Exercises
+
+## Exercises Completed
+
+### Topics Covered
+
+* Mock Objects
+* Stubbing
+* Verification
+* Dependency Injection
+
+### Learning Outcome
+
+* Tested business logic independently.
+* Reduced dependency on external services.
+* Improved unit testing techniques.
+* Learned mocking framework concepts.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# SLF4J Logging Exercises
+
+## Exercises Completed
+
+### Topics Covered
+
+* Logger Configuration
+* Log Levels
+* Logging Best Practices
+* Debugging
+
+### Learning Outcome
+
+* Implemented logging in Java applications.
+* Improved debugging.
+* Recorded application events.
+* Learned professional logging practices.
+
+**Status:** ✅ Executed Successfully
 
