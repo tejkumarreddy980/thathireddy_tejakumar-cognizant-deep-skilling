@@ -1,341 +1,455 @@
-# 🚀 Cognizant Digital Nurture 5.0 – Java Full Stack Engineer (Deep Skilling)
+# Java FSE Deep Skilling (Digital Nurture 5.0)
 
-Welcome to my **Cognizant Digital Nurture 5.0 – Java Full Stack Engineer (FSE)** repository.
-
-This repository contains all the weekly hands-on exercises, coding assignments, and mini projects completed during the Deep Skilling program. The learning journey covers backend development, frontend technologies, database programming, testing, microservices, and version control following industry best practices.
+# Cognizant Digital Nurture 5.0 Program
 
 ---
 
-## 📌 Program Information
-
-| Item | Details |
-|------|---------|
-| Program | Cognizant Digital Nurture 5.0 – Deep Skilling |
-| Track | Java Full Stack Engineer |
-| Duration | 7 Weeks |
-| Language | Java |
-| Repository Type | Weekly Hands-on Exercises & Projects |
-
----
-
-# 📚 Learning Journey
-
-## Week 1 – Software Design & Programming Foundations
-
-### Design Patterns
-- Singleton Pattern
-- Factory Method Pattern
-
-**Skills Developed**
-- Object-oriented design
-- Reusable software architecture
-- Loose coupling
-- Creational design patterns
+| **Field**                   | **Details** |
+| --------------------------- | ----------- |
+| **Program**                 | Cognizant Digital Nurture 5.0 – Deep Skilling |
+| **Track**                   | Java Full Stack Engineer (Java FSE) |
+| **Duration**                | 7 Weeks |
+| **Modules Covered**         | Design Patterns, Data Structures & Algorithms, PL/SQL, Java Programming, Spring Framework, Spring Boot, Spring Data JPA, Hibernate, REST APIs, Spring Security, Microservices, ReactJS, Angular, Git, JUnit, Mockito, SLF4J |
+| **Programming Language**    | Java |
+| **Tools & Technologies**    | Spring Boot, Maven, Hibernate, ReactJS, Angular, Git, Oracle PL/SQL, JUnit, Mockito, SLF4J |
+| **Development Environment** | Programiz Online Java Compiler, Eclipse IDE, IntelliJ IDEA, VS Code |
+| **Repository**              | Weekly Hands-on Exercises and Projects |
 
 ---
 
-### Data Structures & Algorithms
+# Week 1 – Design Patterns and Principles
 
-Covered concepts including:
+## Exercises Completed
 
-- Arrays
-- Searching
-- Sorting
-- Time Complexity
-- Space Complexity
-- Problem Solving
+### Exercise 1: Implementing the Singleton Pattern
 
-**Outcome**
+**Files:**
 
-Strengthened logical thinking and coding efficiency through algorithm implementation.
+* `singleton/DatabaseConnection.java`
+* `singleton/SingletonDemo.java`
 
----
+**Pattern:** Singleton (Creational Design Pattern)
 
-### Oracle PL/SQL
+### What the Singleton Pattern does
 
-Topics practiced:
+* Ensures only one instance of a class exists throughout the application.
+* Provides a global access point to that instance.
+* Prevents unnecessary object creation.
+* Uses thread-safe implementation with double-checked locking.
 
-- Variables
-- Conditional Statements
-- Loops
-- Procedures
-- Functions
-- Cursors
-- Exception Handling
+**Real World Use Case**
 
-**Outcome**
+A database connection manager where the entire application shares a single database connection instead of creating multiple connections.
 
-Improved database programming and procedural SQL skills.
+**Status:** ✅ Executed Successfully
 
 ---
 
-# Week 2 – Spring Framework
+### Exercise 2: Implementing the Factory Method Pattern
 
-Topics covered
+**Files:**
 
-- Spring Core
-- Dependency Injection
-- Maven
-- Spring Boot
-- Spring Data JPA
-- Hibernate
+* `factory/Notification.java`
+* `factory/EmailNotification.java`
+* `factory/SMSNotification.java`
+* `factory/PushNotification.java`
+* `factory/NotificationFactory.java`
+* `factory/FactoryDemo.java`
 
-**Outcome**
+**Pattern:** Factory Method (Creational Design Pattern)
 
-Built Java applications using Spring Framework and understood enterprise application development.
+### What the Factory Method Pattern does
 
----
+* Creates objects without exposing the object creation logic.
+* Returns objects through a common interface.
+* Reduces dependency between classes.
+* Makes applications easier to extend.
 
-# Week 3 – REST API Development
+**Real World Use Case**
 
-Implemented RESTful services using Spring Boot.
+A notification service where Email, SMS, or Push notifications are created depending on user requirements.
 
-Topics included
-
-- REST Controllers
-- CRUD Operations
-- ResponseEntity
-- Request Mapping
-- Exception Handling
-
-**Outcome**
-
-Developed backend APIs following REST architecture.
+**Status:** ✅ Executed Successfully
 
 ---
 
-# Week 4 – Advanced Spring Boot
+# Week 1 – Data Structures and Algorithms (DSA)
 
-Covered
+## Exercises Completed
 
-- Layered Architecture
-- Validation
-- DTO
-- Content Negotiation
-- API Versioning
-- HATEOAS
+This week focused on solving fundamental Data Structures and Algorithms problems using Java.
 
-**Outcome**
+### Topics Covered
 
-Designed maintainable enterprise applications using best development practices.
+* Arrays
+* Searching Algorithms
+* Sorting Algorithms
+* Time Complexity
+* Space Complexity
+* Basic Problem Solving
 
----
+### Learning Outcome
 
-# Week 5 – Microservices
+* Improved logical thinking and programming skills.
+* Learned how to optimize algorithms.
+* Practiced solving interview-oriented coding problems.
+* Understood different approaches to solve the same problem efficiently.
 
-Implemented microservice-based applications using
-
-- Spring Boot
-- Spring Cloud
-- Configuration Server
-- API Gateway
-- Service Communication
-
-**Outcome**
-
-Learned distributed application architecture and scalable backend development.
+**Status:** ✅ Executed Successfully
 
 ---
 
-# Week 6 – Frontend & Development Tools
+# Week 1 – PL/SQL
 
-## ReactJS
+## Exercises Completed
 
-Topics
+This week focused on database programming using Oracle PL/SQL.
 
-- Components
-- JSX
-- Props
-- State
-- Hooks
-- Event Handling
+### Topics Covered
 
-## Git & GitHub
+* Variables
+* Conditional Statements
+* Loops
+* Procedures
+* Functions
+* Cursors
+* Exception Handling
 
-Topics
+### Learning Outcome
 
-- Repository Creation
-- Commit History
-- Branching
-- Merge
-- Remote Repository Management
+* Developed PL/SQL programs.
+* Created reusable procedures and functions.
+* Learned database-side programming.
+* Improved SQL programming skills.
 
-## Testing
-
-### JUnit
-
-- Assertions
-- Test Lifecycle
-- Unit Testing
-
-### Mockito
-
-- Mock Objects
-- Stubbing
-- Verification
-
-### SLF4J
-
-- Logging
-- Debugging
-- Log Levels
-
-**Outcome**
-
-Developed complete applications with testing, logging, and version control.
+**Status:** ✅ Executed Successfully
 
 ---
 
-# Week 7 – Angular
+# Week 2 – Java Programming
 
-Topics covered
+## Exercises Completed
 
-- Angular CLI
-- TypeScript
-- Components
-- Routing
-- Directives
-- Pipes
-- Forms
-- Services
-- Dependency Injection
-- HTTP Client
-- RxJS
+This week strengthened my Java programming fundamentals through practical coding exercises.
 
-**Outcome**
+### Topics Covered
 
-Built modern single-page applications using Angular and integrated frontend applications with REST APIs.
+* Object-Oriented Programming
+* Exception Handling
+* Collections Framework
+* File Handling
+* Multithreading
 
----
+### Learning Outcome
 
-# 🛠 Technologies Used
+* Improved Java coding skills.
+* Learned object-oriented concepts.
+* Worked with Java Collections Framework.
+* Developed multithreaded applications.
 
-## Backend
-
-- Java
-- Spring Framework
-- Spring Boot
-- Spring Data JPA
-- Hibernate
-- Spring Security
-- Spring Cloud
-- REST APIs
-- Microservices
-
-## Frontend
-
-- ReactJS
-- Angular
-- TypeScript
-- HTML5
-- CSS3
-- Bootstrap
-
-## Database
-
-- Oracle SQL
-- Oracle PL/SQL
-
-## Testing
-
-- JUnit
-- Mockito
-
-## Logging
-
-- SLF4J
-
-## Tools
-
-- Eclipse IDE
-- IntelliJ IDEA
-- VS Code
-- Maven
-- Git
-- GitHub
+**Status:** ✅ Executed Successfully
 
 ---
 
-# 📁 Repository Structure
+# Week 3 – Spring REST Hands-on
 
-```
-Week-1/
-│── Design Patterns
-│── Data Structures & Algorithms
-│── PL-SQL
+## Exercises Completed
 
-Week-2/
-│── Spring Core
-│── Maven
-│── Spring Data JPA
-│── Hibernate
+This week focused on developing RESTful web services using Spring Boot.
 
-Week-3/
-│── Spring REST
-│── Spring Security
+### Topics Covered
 
-Week-4/
-│── Advanced REST
-│── Spring Boot
+* Spring Boot
+* REST Controllers
+* CRUD Operations
+* Request Mapping
+* ResponseEntity
+* Exception Handling
 
-Week-5/
-│── Microservices
+### Learning Outcome
 
-Week-6/
-│── ReactJS
-│── Git
-│── JUnit
-│── Mockito
-│── SLF4J
+* Developed REST APIs.
+* Implemented CRUD operations.
+* Tested APIs using HTTP requests.
+* Built backend services following REST principles.
 
-Week-7/
-│── Angular
-```
+**Status:** ✅ Executed Successfully
 
 ---
 
-# 🎯 Skills Acquired
+# Week 4.1 – Spring REST Hands-on
 
-- Object-Oriented Programming
-- Design Patterns
-- Java Programming
-- Spring Framework
-- REST API Development
-- Database Programming
-- Microservices
-- ReactJS
-- Angular
-- Version Control
-- Unit Testing
-- Mock Testing
-- Logging
-- Problem Solving
+## Exercises Completed
+
+This week focused on improving REST API development with layered architecture.
+
+### Topics Covered
+
+* Controller Layer
+* Service Layer
+* Repository Layer
+* DTO
+* Validation
+
+### Learning Outcome
+
+* Developed structured Spring Boot applications.
+* Applied validation techniques.
+* Improved code maintainability.
+* Followed best practices for API development.
+
+**Status:** ✅ Executed Successfully
 
 ---
 
-# 📈 Program Outcome
+# Week 4.2 – Spring REST Hands-on
 
-Through this Deep Skilling program, I gained practical experience in building full-stack Java applications using modern enterprise technologies. The hands-on exercises improved my understanding of software architecture, backend development, frontend frameworks, testing methodologies, and collaborative development using Git and GitHub.
+## Exercises Completed
+
+This week covered advanced REST concepts.
+
+### Topics Covered
+
+* Content Negotiation
+* HATEOAS
+* API Versioning
+* Unit Testing
+* Integration Testing
+
+### Learning Outcome
+
+* Implemented advanced REST features.
+* Built versioned APIs.
+* Improved API usability.
+* Tested REST services effectively.
+
+**Status:** ✅ Executed Successfully
 
 ---
 
-# ✅ Repository Status
+# Week 5 – Creating Microservices for Account and Loan
 
-| Module | Status |
-|---------|--------|
-| Design Patterns | ✅ Completed |
-| Data Structures & Algorithms | ✅ Completed |
-| PL/SQL | ✅ Completed |
-| Spring Framework | ✅ Completed |
-| Spring Boot | ✅ Completed |
-| Spring Data JPA | ✅ Completed |
-| Hibernate | ✅ Completed |
-| REST APIs | ✅ Completed |
-| Spring Security | ✅ Completed |
-| Microservices | ✅ Completed |
-| ReactJS | ✅ Completed |
-| Angular | ✅ Completed |
-| Git & GitHub | ✅ Completed |
-| JUnit | ✅ Completed |
-| Mockito | ✅ Completed |
-| SLF4J | ✅ Completed |
+## Exercises Completed
+
+This week introduced Microservices Architecture using Spring Boot and Spring Cloud.
+
+### Topics Covered
+
+* Microservices
+* Service Communication
+* API Gateway
+* Spring Cloud
+* Configuration Management
+
+### Learning Outcome
+
+* Developed independent services.
+* Learned service communication.
+* Understood distributed application architecture.
+* Built scalable backend applications.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# Week 6 – ReactJS Hands-on Lab
+
+## Exercises Completed
+
+This week focused on frontend development using ReactJS.
+
+### Topics Covered
+
+* JSX
+* Components
+* Props
+* State
+* Event Handling
+* React Hooks
+
+### Learning Outcome
+
+* Developed reusable React components.
+* Built interactive user interfaces.
+* Managed application state.
+* Improved frontend development skills.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# Week 6 – Git Hands-on Lab
+
+## Exercises Completed
+
+This week focused on learning Git and GitHub for version control.
+
+### Topics Covered
+
+* Git Basics
+* Commits
+* Branching
+* Merging
+* Remote Repository
+* GitHub
+
+### Learning Outcome
+
+* Managed project versions.
+* Collaborated using Git.
+* Uploaded projects to GitHub.
+* Learned version control best practices.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# JUnit Basic Testing Exercises
+
+## Exercises Completed
+
+### Topics Covered
+
+* Unit Testing
+* Assertions
+* Test Suites
+* Test Lifecycle
+
+### Learning Outcome
+
+* Wrote JUnit test cases.
+* Verified application functionality.
+* Improved software quality.
+* Practiced automated testing.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# Mockito Exercises
+
+## Exercises Completed
+
+### Topics Covered
+
+* Mock Objects
+* Stubbing
+* Verification
+* Dependency Injection
+
+### Learning Outcome
+
+* Tested business logic independently.
+* Reduced dependency on external services.
+* Improved unit testing techniques.
+* Learned mocking framework concepts.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# SLF4J Logging Exercises
+
+## Exercises Completed
+
+### Topics Covered
+
+* Logger Configuration
+* Log Levels
+* Logging Best Practices
+* Debugging
+
+### Learning Outcome
+
+* Implemented logging in Java applications.
+* Improved debugging.
+* Recorded application events.
+* Learned professional logging practices.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# Week 7 – Angular Hands-on Lab
+
+## Exercises Completed
+
+This week focused on developing modern frontend applications using Angular framework and TypeScript.
+
+### Topics Covered
+
+* Angular Framework
+* Angular CLI
+* TypeScript
+* Components
+* Templates
+* Data Binding
+* Directives
+* Pipes
+* Services
+* Dependency Injection
+* Routing
+* Forms
+* HTTP Client
+* Observables (RxJS)
+
+### Learning Outcome
+
+* Developed single-page applications using Angular.
+* Created reusable components for better application structure.
+* Implemented data binding and event handling.
+* Used Angular Routing for navigation.
+* Created services and applied Dependency Injection.
+* Integrated frontend applications with REST APIs.
+* Improved frontend development skills.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# Week 7 – Angular Project Hands-on
+
+## Exercises Completed
+
+This week involved building a complete Angular application by applying Angular concepts.
+
+### Technologies Used
+
+* Angular
+* TypeScript
+* HTML5
+* CSS3
+* Bootstrap
+* Angular CLI
+* RxJS
+
+### Features Implemented
+
+* Component-based architecture
+* User interface development
+* Navigation using Angular Router
+* Form handling and validation
+* Service creation
+* API integration
+* Dynamic data rendering
+* Error handling
+
+### Learning Outcome
+
+* Built a complete frontend application using Angular.
+* Applied Angular architecture and best practices.
+* Improved component communication.
+* Connected frontend applications with backend REST services.
+* Developed scalable and maintainable user interfaces.
+
+**Status:** ✅ Executed Successfully
+
+---
+
+# Overall Learning Outcome
+
+Throughout the Cognizant Digital Nurture 5.0 – Java Full Stack Engineer Deep Skilling Program, I gained practical experience in designing, developing, testing, and managing full-stack applications.
+
+The program provided hands-on experience in Java development, Spring Boot, REST APIs, Microservices, ReactJS, Angular, Database Programming, Testing Frameworks, Logging, and Version Control using Git.
+
+**Overall Status:** ✅ Successfully Completed All Hands-on Exercises and Projects only weeks and matter not struture in this only i want week matter other remove
