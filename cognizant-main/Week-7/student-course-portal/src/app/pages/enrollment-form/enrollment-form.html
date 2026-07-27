@@ -1,0 +1,88 @@
+<div style="padding: 2rem; font-family: sans-serif; max-width: 600px;">
+  <h2>Student Enrollment Request (Template-Driven Form)</h2>
+
+  <form #enrollForm="ngForm" (ngSubmit)="onSubmit(enrollForm)" novalidate style="display: flex; flex-direction: column; gap: 1.2rem;">
+
+    <!-- Student Name -->
+    <div>
+      <label style="display: block; margin-bottom: 0.3rem; font-weight: bold;">Student Name *</label>
+      <input 
+        type="text" 
+        name="studentName" 
+        [(ngModel)]="formData.studentName" 
+        #nameCtrl="ngModel" 
+        required 
+        minlength="3" 
+        style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;"
+        [ngClass]="{ 'is-invalid': nameCtrl.touched && nameCtrl.invalid, 'is-valid': nameCtrl.touched && nameCtrl.valid }"
+      />
+      <span *ngIf="nameCtrl.touched && nameCtrl.errors?.['required']" style="color: red; font-size: 0.85rem;">Name is required.</span>
+      <span *ngIf="nameCtrl.touched && nameCtrl.errors?.['minlength']" style="color: red; font-size: 0.85rem;">Name must be at least 3 characters.</span>
+    </div>
+
+    <!-- Student Email -->
+    <div>
+      <label style="display: block; margin-bottom: 0.3rem; font-weight: bold;">Student Email *</label>
+      <input 
+        type="email" 
+        name="studentEmail" 
+        [(ngModel)]="formData.studentEmail" 
+        #emailCtrl="ngModel" 
+        required 
+        email 
+        style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;"
+        [ngClass]="{ 'is-invalid': emailCtrl.touched && emailCtrl.invalid, 'is-valid': emailCtrl.touched && emailCtrl.valid }"
+      />
+      <span *ngIf="emailCtrl.touched && emailCtrl.errors?.['required']" style="color: red; font-size: 0.85rem;">Email is required.</span>
+      <span *ngIf="emailCtrl.touched && emailCtrl.errors?.['email']" style="color: red; font-size: 0.85rem;">Please enter a valid email address.</span>
+    </div>
+
+    <!-- Course ID -->
+    <div>
+      <label style="display: block; margin-bottom: 0.3rem; font-weight: bold;">Course ID *</label>
+      <input 
+        type="number" 
+        name="courseId" 
+        [(ngModel)]="formData.courseId" 
+        #courseCtrl="ngModel" 
+        required 
+        style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;"
+        [ngClass]="{ 'is-invalid': courseCtrl.touched && courseCtrl.invalid, 'is-valid': courseCtrl.touched && courseCtrl.valid }"
+      />
+      <span *ngIf="courseCtrl.touched && courseCtrl.errors?.['required']" style="color: red; font-size: 0.85rem;">Course ID is required.</span>
+    </div>
+
+    <!-- Preferred Semester -->
+    <div>
+      <label style="display: block; margin-bottom: 0.3rem; font-weight: bold;">Preferred Semester</label>
+      <select name="preferredSemester" [(ngModel)]="formData.preferredSemester" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+        <option value="Odd">Odd Semester</option>
+        <option value="Even">Even Semester</option>
+      </select>
+    </div>
+
+    <!-- Agree to Terms -->
+    <div>
+      <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+        <input type="checkbox" name="agreeToTerms" [(ngModel)]="formData.agreeToTerms" #termsCtrl="ngModel" required />
+        <span>I agree to the enrollment terms and conditions *</span>
+      </label>
+      <span *ngIf="termsCtrl.touched && termsCtrl.errors?.['required']" style="color: red; font-size: 0.85rem; display: block;">You must agree before submitting.</span>
+    </div>
+
+    <!-- Form Actions -->
+    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+      <button type="submit" [disabled]="enrollForm.invalid" style="padding: 0.6rem 1.2rem; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer;">
+        Submit
+      </button>
+      <button type="button" (click)="onReset(enrollForm)" style="padding: 0.6rem 1.2rem; background: #6c757d; color: white; border: none; border-radius: 4px; cursor: pointer;">
+        Reset
+      </button>
+    </div>
+  </form>
+
+  <!-- Success Message -->
+  <div *ngIf="isSubmitted" style="margin-top: 1.5rem; padding: 1rem; background: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 4px;">
+    Enrollment request submitted successfully!
+  </div>
+</div>

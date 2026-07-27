@@ -1,0 +1,14 @@
+<div style="padding: 2rem; font-family: sans-serif; max-width: 600px;">
+  <a routerLink="/courses" style="color: #007bff; text-decoration: none;">&larr; Back to Courses</a>
+  
+  <div *ngIf="course; else notFound" style="margin-top: 1.5rem; border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px; background: #fafafa;">
+    <h2 style="margin-top: 0;">{{ course.name }}</h2>
+    <p><strong>Code:</strong> {{ course.code }}</p>
+    <p><strong>Credits:</strong> {{ course.credits }}</p>
+    <p><strong>Status:</strong> <span style="text-transform: capitalize;">{{ course.gradeStatus }}</span></p>
+  </div>
+
+  <ng-template #notFound>
+    <p style="color: red; margin-top: 1.5rem;">Course details not found for the specified ID.</p>
+  </ng-template>
+</div>

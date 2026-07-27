@@ -1,0 +1,99 @@
+<div style="padding: 2rem; font-family: sans-serif; max-width: 600px;">
+  <h2>Reactive Student Enrollment Form</h2>
+
+  <form [formGroup]="enrollForm" (ngSubmit)="onSubmit()" style="display: flex; flex-direction: column; gap: 1.2rem;">
+
+    <!-- Student Name -->
+    <div>
+      <label style="display: block; margin-bottom: 0.3rem; font-weight: bold;">Student Name *</label>
+      <input 
+        type="text" 
+        formControlName="studentName" 
+        style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" 
+      />
+      <span *ngIf="enrollForm.get('studentName')?.touched && enrollForm.get('studentName')?.errors?.['required']" style="color: red; font-size: 0.85rem;">
+        Name is required.
+      </span>
+      <span *ngIf="enrollForm.get('studentName')?.touched && enrollForm.get('studentName')?.errors?.['minlength']" style="color: red; font-size: 0.85rem;">
+        Name must be at least 3 characters.
+      </span>
+    </div>
+
+    <!-- Student Email (with Async Email Check) -->
+    <div>
+      <label style="display: block; margin-bottom: 0.3rem; font-weight: bold;">Student Email *</label>
+      <input 
+        type="email" 
+        formControlName="studentEmail" 
+        style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" 
+      />
+      <span *ngIf="enrollForm.get('studentEmail')?.pending" style="color: blue; font-size: 0.85rem;">
+        Checking email availability...
+      </span>
+      <span *ngIf="enrollForm.get('studentEmail')?.touched && enrollForm.get('studentEmail')?.errors?.['required']" style="color: red; font-size: 0.85rem;">
+        Email is required.
+      </span>
+      <span *ngIf="enrollForm.get('studentEmail')?.touched && enrollForm.get('studentEmail')?.errors?.['email']" style="color: red; font-size: 0.85rem;">
+        Please enter a valid email.
+      </span>
+      <span *ngIf="enrollForm.get('studentEmail')?.errors?.['emailTaken']" style="color: red; font-size: 0.85rem;">
+        This email address is already taken (simulated test error).
+      </span>
+    </div>
+
+    <!-- Course ID (Custom Sync Validator) -->
+    <div>
+      <label style="display: block; margin-bottom: 0.3rem; font-weight: bold;">Course Code / ID *</label>
+      <input 
+        type="text" 
+        formControlName="courseId" 
+        style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" 
+      />
+      <span *ngIf="enrollForm.get('courseId')?.touched && enrollForm.get('courseId')?.errors?.['required']" style="color: red; font-size: 0.85rem;">
+        Course Code is required.
+      </span>
+      <span *ngIf="enrollForm.get('courseId')?.errors?.['noCourseCode']" style="color: red; font-size: 0.85rem;">
+        Course codes starting with "XX" are disallowed.
+      </span>
+    </div>
+
+    <!-- Preferred Semester -->
+    <div>
+      <label style="display: block; margin-bottom: 0.3rem; font-weight: bold;">Preferred Semester</label>
+      <select formControlName="preferredSemester" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+        <option value="Odd">Odd Semester</option>
+        <option value="Even">Even Semester</option>
+      </select>
+    </div>
+
+    <!-- Dynamic FormArray for Additional Courses -->
+    <div style="border-top: 1px solid #eee; padding-top: 1rem;">
+      <label style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Additional Courses (FormArray):</label>
+      <div *ngFor="let ctrl of additionalCourses.controls; let i = index" style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+        <input [formControl]="$any(ctrl)" placeholder="Enter additional course name" style="flex: 1; padding: 0.4rem; border: 1px solid #ccc; border-radius: 4px;" />
+        <button type="button" (click)="removeCourse(i)" style="background: #dc3545; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 4px; cursor: pointer;">
+          Remove
+        </button>
+      </div>
+      <button type="button" (click)="addCourse()" style="background: #17a2b8; color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 4px; cursor: pointer;">
+        + Add Another Course
+      </button>
+    </div>
+
+    <!-- Agree to Terms -->
+    <div>
+      <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+        <input type="checkbox" formControlName="agreeToTerms" />
+        <span>I agree to the enrollment terms and conditions *</span>
+      </label>
+    </div>
+
+    <button type="submit" [disabled]="enrollForm.invalid" style="padding: 0.6rem 1.2rem; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; align-self: start;">
+      Submit Reactive Form
+    </button>
+  </form>
+
+  <div *ngIf="isSubmitted" style="margin-top: 1.5rem; padding: 1rem; background: #d4edda; color: #155724; border: 1px solid #c3e6cb; border-radius: 4px;">
+    Reactive enrollment request successfully submitted!
+  </div>
+</div>

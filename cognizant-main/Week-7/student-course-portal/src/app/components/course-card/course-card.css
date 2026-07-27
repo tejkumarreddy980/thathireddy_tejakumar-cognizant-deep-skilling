@@ -1,0 +1,9 @@
+.card--enrolled {
+  background-color: #f0fff0 !important;
+}
+.card--full {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.expanded {
+  padding-bottom: 1.5rem !important;
+}

@@ -1,0 +1,33 @@
+<div style="padding: 2rem; font-family: sans-serif; max-width: 800px;">
+  <h1>{{ portalName }}</h1>
+  <p style="color: #555; font-size: 1.1rem; line-height: 1.6;">
+    Manage your academic journey, explore available technical courses, track your GPA, and process enrollments seamlessly.
+  </p>
+
+  <div style="margin: 1.5rem 0; padding: 1rem; border: 1px solid #e0e0e0; border-radius: 6px;">
+    <button [disabled]="!isPortalActive" (click)="onEnrollClick()" style="padding: 0.5rem 1rem; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;">
+      Enroll Now
+    </button>
+    <p *ngIf="message" style="color: #28a745; font-weight: bold; margin-top: 0.5rem;">{{ message }}</p>
+
+    <div style="margin-top: 1rem;">
+      <label style="display: block; margin-bottom: 0.25rem;">Search Portal State:</label>
+      <input #searchInput (input)="onSearchChange(searchInput.value)" placeholder="Type to filter courses state..." style="padding: 0.5rem; width: 250px; border: 1px solid #ccc; border-radius: 4px;" />
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 1.5rem; margin-top: 2rem;">
+    <div style="background: #f0f4f8; padding: 1.2rem; border-radius: 8px; flex: 1; text-align: center;">
+      <h3 style="margin: 0; color: #007bff; font-size: 1.8rem;">{{ (totalCourses$ | async) || 0 }}</h3>
+      <p style="margin: 0.5rem 0 0; color: #666;">Courses in Store</p>
+    </div>
+    <div style="background: #f0f4f8; padding: 1.2rem; border-radius: 8px; flex: 1; text-align: center;">
+      <h3 style="margin: 0; color: #28a745; font-size: 1.8rem;">{{ (enrolledCount$ | async) || 0 }}</h3>
+      <p style="margin: 0.5rem 0 0; color: #666;">Enrolled in Store</p>
+    </div>
+    <div style="background: #f0f4f8; padding: 1.2rem; border-radius: 8px; flex: 1; text-align: center;">
+      <h3 style="margin: 0; color: #6f42c1; font-size: 1.8rem;">3.8</h3>
+      <p style="margin: 0.5rem 0 0; color: #666;">GPA</p>
+    </div>
+  </div>
+</div>

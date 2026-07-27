@@ -1,0 +1,27 @@
+<div style="padding: 2rem; font-family: sans-serif;">
+  <h2>Available Courses (Store Managed)</h2>
+
+  <div *ngIf="loading$ | async" style="padding: 0.8rem; background: #e6f7ff; color: #007bff; border-radius: 4px; margin-bottom: 1rem;">
+    ?? Fetching state from CourseStore...
+  </div>
+
+  <div *ngIf="error$ | async as error" style="padding: 0.8rem; background: #f8d7da; color: #721c24; border-radius: 4px; margin-bottom: 1rem;">
+    {{ error }}
+  </div>
+
+  <ng-container *ngIf="courses$ | async as courses">
+    <div *ngIf="courses.length > 0; else noCourses" style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+      <app-course-card 
+        *ngFor="let c of courses; trackBy: trackByCourseId" 
+        [course]="c" 
+        [isEnrolled]="isEnrolled(c.id)"
+        [appHighlight]="'#e6f7ff'"
+        (enrollRequested)="onEnroll($event)">
+      </app-course-card>
+    </div>
+  </ng-container>
+
+  <ng-template #noCourses>
+    <p style="color: #888;">No courses found in state.</p>
+  </ng-template>
+</div>
