@@ -1,0 +1,341 @@
+# 🚀 Cognizant Digital Nurture 5.0 – Java Full Stack Engineer (Deep Skilling)
+
+Welcome to my **Cognizant Digital Nurture 5.0 – Java Full Stack Engineer (FSE)** repository.
+
+This repository contains all the weekly hands-on exercises, coding assignments, and mini projects completed during the Deep Skilling program. The learning journey covers backend development, frontend technologies, database programming, testing, microservices, and version control following industry best practices.
+
+---
+
+## 📌 Program Information
+
+| Item | Details |
+|------|---------|
+| Program | Cognizant Digital Nurture 5.0 – Deep Skilling |
+| Track | Java Full Stack Engineer |
+| Duration | 7 Weeks |
+| Language | Java |
+| Repository Type | Weekly Hands-on Exercises & Projects |
+
+---
+
+# 📚 Learning Journey
+
+## Week 1 – Software Design & Programming Foundations
+
+### Design Patterns
+- Singleton Pattern
+- Factory Method Pattern
+
+**Skills Developed**
+- Object-oriented design
+- Reusable software architecture
+- Loose coupling
+- Creational design patterns
+
+---
+
+### Data Structures & Algorithms
+
+Covered concepts including:
+
+- Arrays
+- Searching
+- Sorting
+- Time Complexity
+- Space Complexity
+- Problem Solving
+
+**Outcome**
+
+Strengthened logical thinking and coding efficiency through algorithm implementation.
+
+---
+
+### Oracle PL/SQL
+
+Topics practiced:
+
+- Variables
+- Conditional Statements
+- Loops
+- Procedures
+- Functions
+- Cursors
+- Exception Handling
+
+**Outcome**
+
+Improved database programming and procedural SQL skills.
+
+---
+
+# Week 2 – Spring Framework
+
+Topics covered
+
+- Spring Core
+- Dependency Injection
+- Maven
+- Spring Boot
+- Spring Data JPA
+- Hibernate
+
+**Outcome**
+
+Built Java applications using Spring Framework and understood enterprise application development.
+
+---
+
+# Week 3 – REST API Development
+
+Implemented RESTful services using Spring Boot.
+
+Topics included
+
+- REST Controllers
+- CRUD Operations
+- ResponseEntity
+- Request Mapping
+- Exception Handling
+
+**Outcome**
+
+Developed backend APIs following REST architecture.
+
+---
+
+# Week 4 – Advanced Spring Boot
+
+Covered
+
+- Layered Architecture
+- Validation
+- DTO
+- Content Negotiation
+- API Versioning
+- HATEOAS
+
+**Outcome**
+
+Designed maintainable enterprise applications using best development practices.
+
+---
+
+# Week 5 – Microservices
+
+Implemented microservice-based applications using
+
+- Spring Boot
+- Spring Cloud
+- Configuration Server
+- API Gateway
+- Service Communication
+
+**Outcome**
+
+Learned distributed application architecture and scalable backend development.
+
+---
+
+# Week 6 – Frontend & Development Tools
+
+## ReactJS
+
+Topics
+
+- Components
+- JSX
+- Props
+- State
+- Hooks
+- Event Handling
+
+## Git & GitHub
+
+Topics
+
+- Repository Creation
+- Commit History
+- Branching
+- Merge
+- Remote Repository Management
+
+## Testing
+
+### JUnit
+
+- Assertions
+- Test Lifecycle
+- Unit Testing
+
+### Mockito
+
+- Mock Objects
+- Stubbing
+- Verification
+
+### SLF4J
+
+- Logging
+- Debugging
+- Log Levels
+
+**Outcome**
+
+Developed complete applications with testing, logging, and version control.
+
+---
+
+# Week 7 – Angular
+
+Topics covered
+
+- Angular CLI
+- TypeScript
+- Components
+- Routing
+- Directives
+- Pipes
+- Forms
+- Services
+- Dependency Injection
+- HTTP Client
+- RxJS
+
+**Outcome**
+
+Built modern single-page applications using Angular and integrated frontend applications with REST APIs.
+
+---
+
+# 🛠 Technologies Used
+
+## Backend
+
+- Java
+- Spring Framework
+- Spring Boot
+- Spring Data JPA
+- Hibernate
+- Spring Security
+- Spring Cloud
+- REST APIs
+- Microservices
+
+## Frontend
+
+- ReactJS
+- Angular
+- TypeScript
+- HTML5
+- CSS3
+- Bootstrap
+
+## Database
+
+- Oracle SQL
+- Oracle PL/SQL
+
+## Testing
+
+- JUnit
+- Mockito
+
+## Logging
+
+- SLF4J
+
+## Tools
+
+- Eclipse IDE
+- IntelliJ IDEA
+- VS Code
+- Maven
+- Git
+- GitHub
+
+---
+
+# 📁 Repository Structure
+
+```
+Week-1/
+│── Design Patterns
+│── Data Structures & Algorithms
+│── PL-SQL
+
+Week-2/
+│── Spring Core
+│── Maven
+│── Spring Data JPA
+│── Hibernate
+
+Week-3/
+│── Spring REST
+│── Spring Security
+
+Week-4/
+│── Advanced REST
+│── Spring Boot
+
+Week-5/
+│── Microservices
+
+Week-6/
+│── ReactJS
+│── Git
+│── JUnit
+│── Mockito
+│── SLF4J
+
+Week-7/
+│── Angular
+```
+
+---
+
+# 🎯 Skills Acquired
+
+- Object-Oriented Programming
+- Design Patterns
+- Java Programming
+- Spring Framework
+- REST API Development
+- Database Programming
+- Microservices
+- ReactJS
+- Angular
+- Version Control
+- Unit Testing
+- Mock Testing
+- Logging
+- Problem Solving
+
+---
+
+# 📈 Program Outcome
+
+Through this Deep Skilling program, I gained practical experience in building full-stack Java applications using modern enterprise technologies. The hands-on exercises improved my understanding of software architecture, backend development, frontend frameworks, testing methodologies, and collaborative development using Git and GitHub.
+
+---
+
+# ✅ Repository Status
+
+| Module | Status |
+|---------|--------|
+| Design Patterns | ✅ Completed |
+| Data Structures & Algorithms | ✅ Completed |
+| PL/SQL | ✅ Completed |
+| Spring Framework | ✅ Completed |
+| Spring Boot | ✅ Completed |
+| Spring Data JPA | ✅ Completed |
+| Hibernate | ✅ Completed |
+| REST APIs | ✅ Completed |
+| Spring Security | ✅ Completed |
+| Microservices | ✅ Completed |
+| ReactJS | ✅ Completed |
+| Angular | ✅ Completed |
+| Git & GitHub | ✅ Completed |
+| JUnit | ✅ Completed |
+| Mockito | ✅ Completed |
+| SLF4J | ✅ Completed |
